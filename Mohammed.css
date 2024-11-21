@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgb(138, 137, 137);
+}
+.profile::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    background-color: #fbcb04;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+}
+.profile .image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fbcb04;
+    padding: 4px;
+    margin-bottom: 10px;
+
+}
+.image .my-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.profile .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 24, 24);
+}
+.texts .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.texts .title{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color: #fbcb04;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+.link:hover{
+    transform: translateY(-4px);
+}
+.profile .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    background-color: #fbda04;
+    color: black;
+    border-radius: 24px;
+    padding: 8px 24px;
+    margin: 0 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.button:hover{
+    background-color: black;
+    color: #fbcb04;
+}
+.profile .datas{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.datas .data{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid white;
+    color: rgb(110, 103, 103);
+}
+.data:last-child{
+    border-right: none;
+}
+.data i{
+    font-size: 14px;
+    margin-right: 6px;
+}
