@@ -131,3 +131,8 @@ body{
     font-size: 14px;
     margin-right: 6px;
 }
+@media (max-width: 480px) {
+    .profile {
+        max-width: 280px;
+        padding: 15px;
+    }}
